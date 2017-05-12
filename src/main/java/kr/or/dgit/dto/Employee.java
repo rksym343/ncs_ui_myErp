@@ -1,7 +1,7 @@
 package kr.or.dgit.dto;
 
 public class Employee {
-	private String eno;
+	private int eno;
 	private String ename;
 	private int salary;
 	private Department dno;
@@ -12,7 +12,7 @@ public class Employee {
 	public Employee() {
 	}
 
-	public Employee(String eno, String ename, int salary, Department dno, boolean gender, String joindate,
+	public Employee(int eno, String ename, int salary, Department dno, boolean gender, String joindate,
 			Title title) {
 		super();
 		this.eno = eno;
@@ -24,11 +24,11 @@ public class Employee {
 		this.title = title;
 	}
 
-	public String getEno() {
+	public int getEno() {
 		return eno;
 	}
 
-	public void setEno(String eno) {
+	public void setEno(int eno) {
 		this.eno = eno;
 	}
 

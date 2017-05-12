@@ -1,5 +1,17 @@
 package kr.or.dgit.dao;
 
-public interface TitleMapper {
+import java.util.List;
 
+import kr.or.dgit.dto.Title;
+
+public interface TitleMapper {
+	List<Title> selectByAll();
+
+	Title selectTitle(Title title);
+
+	int insertTitle(Title title);
+
+	int updateTitle(Title title);
+
+	int deleteTitle(Title title);
 }

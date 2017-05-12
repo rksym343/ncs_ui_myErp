@@ -1,25 +1,25 @@
 package kr.or.dgit.dto;
 
 public class Department {
-	private String dcode;
+	private int dcode;
 	private String dname;
 	private int floor;
 
 	public Department() {
 	}
 
-	public Department(String dcode, String dname, int floor) {
+	public Department(int dcode, String dname, int floor) {
 		super();
 		this.dcode = dcode;
 		this.dname = dname;
 		this.floor = floor;
 	}
 
-	public String getDcode() {
+	public int getDcode() {
 		return dcode;
 	}
 
-	public void setDcode(String dcode) {
+	public void setDcode(int dcode) {
 		this.dcode = dcode;
 	}
 
